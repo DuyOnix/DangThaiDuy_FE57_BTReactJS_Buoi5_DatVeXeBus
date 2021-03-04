@@ -11,7 +11,7 @@ class Home extends Component {
         { SoGhe: 5, TenGhe: "số 5 ", Gia: 100, TrangThai: false },
         { SoGhe: 6, TenGhe: "số 6 ", Gia: 100, TrangThai: false },
         { SoGhe: 7, TenGhe: "số 7 ", Gia: 100, TrangThai: false },
-        { SoGhe: 8, TenGhe: "số 7 ", Gia: 100, TrangThai: false },
+        { SoGhe: 8, TenGhe: "số 8 ", Gia: 100, TrangThai: false },
         { SoGhe: 9, TenGhe: "số 9 ", Gia: 100, TrangThai: false },
         { SoGhe: 10, TenGhe: "số 10 ", Gia: 100, TrangThai: false },
         { SoGhe: 11, TenGhe: "số 11 ", Gia: 100, TrangThai: false },

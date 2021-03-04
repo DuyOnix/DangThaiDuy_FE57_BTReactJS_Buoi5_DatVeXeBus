@@ -42,19 +42,13 @@ class Home extends Component {
         { SoGhe: 36, TenGhe: "số 36 ", Gia: 100, TrangThai: true }];
     state = {
         bookSeats: [],
-        totalBookedSeats: 0,
     }
 
     addToBookSeats = (bookedSeat) => {
         let cloneBookSeats = [...this.state.bookSeats]
-        let index = cloneBookSeats.findIndex((seat) => {
-            return seat.SoGhe === bookedSeat.SoGhe;
-        });
-        if (index === -1) return;
         cloneBookSeats.push(bookedSeat);
         this.setState({
             bookSeats: cloneBookSeats,
-            totalBookedSeats: this.state.totalBookedSeats + 1,
         },
             () => {
                 console.log(this.state.bookSeats);
@@ -70,7 +64,6 @@ class Home extends Component {
         cloneBookSeats.splice(index, 1);
         this.setState({
             bookSeats: cloneBookSeats,
-            totalBookedSeats: this.state.totalBookedSeats - 1,
         },
             () => {
                 console.log(this.state.bookSeats);
@@ -78,7 +71,7 @@ class Home extends Component {
     }
     render() {
         return (
-            <div className="container">
+            <div className="container w-50">
                 <h1 className="text-warning">ĐẶT VÉ XE HÃNG CYBERSOFT</h1>
                 <div className="row">
                     <div className="col-6">

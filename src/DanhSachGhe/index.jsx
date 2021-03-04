@@ -18,7 +18,7 @@ class DanhSachGhe extends Component {
         return (
             <div>
                 <div className="row border-right pr-5">
-                    <h4 className="bg-primary w-100 py-2 rounded">Tài xế</h4>
+                    <h4 className="bg-info w-100 py-2 rounded">Tài xế</h4>
                     {this.renderSeatList()}
                 </div>
             </div>
